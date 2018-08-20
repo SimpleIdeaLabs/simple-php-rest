@@ -3,6 +3,11 @@ namespace App\Api;
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
+header('Access-Control-Allow-Origin:*');
+header('Access-Control-Allow-Headers:Content-Type');
+header('Access-Control-Allow-Methods: POST, GET, PUT, PATCH, DELETE, OPTIONS'); 
+header('Access-Control-Methods: POST, GET, PUT, PATCH, DELETE, OPTIONS'); 
+
 // Require Files
 require('../libs/Database.php');
 require('../models/Todo.php');
